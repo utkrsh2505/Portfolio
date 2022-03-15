@@ -3,12 +3,15 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
-
+import { Corosal } from "./Corosal";
 const ProjectCard = ({ value }) => {
   const {
     name,
     description,
+    images,
     svn_url,
+    deploy_url,
+    tech,
     stargazers_count,
     languages_url,
     pushed_at,
@@ -17,11 +20,14 @@ const ProjectCard = ({ value }) => {
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
         <Card.Body>
+          {images ?<Corosal images={images}/> :  <Skeleton count={2} /> }
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description)?"":description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+          {svn_url ? <CardButtons svn_url={svn_url} deploy_url={deploy_url} /> : <Skeleton count={2} />}
+          <Card.Text>{tech || <Skeleton />} </Card.Text>
+        
           <hr />
-          {languages_url ? (
+          {/* {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
           ) : (
             <Skeleton count={3} />
@@ -30,21 +36,22 @@ const ProjectCard = ({ value }) => {
             <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
           ) : (
             <Skeleton />
-          )}
+          )} */}
         </Card.Body>
       </Card>
     </Col>
   );
 };
 
-const CardButtons = ({ svn_url }) => {
+const CardButtons = ({ svn_url ,deploy_url}) => {
   return (
     <>
       <a
-        href={`${svn_url}/archive/master.zip`}
+        href= {deploy_url}
+        target=" _blank"
         className="btn btn-outline-secondary mr-3"
       >
-        <i className="fab fa-github" /> Clone Project
+        <i className="fab fa-github" />  Project
       </a>
       <a href={svn_url} target=" _blank" className="btn btn-outline-secondary">
         <i className="fab fa-github" /> Repo

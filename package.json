@@ -1,13 +1,13 @@
 {
   "name": "developers-portfolio",
   "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
-  "homepage": "http://hashirshoaeb.com/home",
+  "homepage": ".",
   "version": "2.0.0",
   "private": true,
   "author": {
-    "name": "Hashir Shoaib",
-    "email": "hashirshoaeb@gmail.com",
-    "url": "https://github.com/hashirshoaeb"
+    "name": "Utkarsh Kumar",
+    "email": "kumarutkarsh2505@gmail.com",
+    "url": "https://github.com/utkrsh2505"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -19,11 +19,13 @@
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.14.0",
+    "react-elastic-carousel": "^0.11.5",
     "react-loading-skeleton": "^2.1.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
     "react-typist": "^2.0.5",
+    "styled-components": "^5.3.3",
     "typescript": "^3.9.7"
   },
   "scripts": {
