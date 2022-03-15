@@ -42,7 +42,7 @@ const proj = [
       name: "CLONE OF OYO",
       description:  "OYO is India's one of the largest network of hotels, which provides customers to stay across the globe.",
       images : ["/Images/oyo1.png","/Images/oyo2.png","/Images/oyo3.png"],
-      svn_url: "https://github.com/jchy/OYO-Clone",
+      svn_url: "https://github.com/utkrsh2505/OYO-Clone",
       deploy_url :"https://zealous-shirley-afc987.netlify.app/",
       tech : "HTML | CSS | JavaScript |React JS |Redux",
       stargazers_count: null,
