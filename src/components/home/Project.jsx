@@ -15,40 +15,45 @@ const dummyProject = {
 };
 
 const proj = [
+  {
+    name: " CLONE OF SMATBOT",
+    description: "SmatBot is a conversational bot building platform to create customizable chatbots for Lead generation,  chat support.",
+    images : ["/Images/smatbot1.png","/Images/smatbot2.png"],
+    svn_url: "https://github.com/utkrsh2505/Smatbot1.git",
+    deploy_url : "https://clone-smatbot.netlify.app/",
+    tech : "HTML | CSS ",
+    stargazers_count: "23",
+    languages_url: null,
+    pushed_at: null,
+  },
+
+ 
+  {
+    name: "CLONE OF OYO",
+    description:  "OYO is India's one of the largest network of hotels, which provides customers to stay across the globe.",
+    images : ["/Images/oyo1.png","/Images/oyo2.png","/Images/oyo3.png"],
+    svn_url: "https://github.com/utkrsh2505/OYO-Clone",
+    deploy_url :"https://zealous-shirley-afc987.netlify.app/",
+    tech : "HTML | CSS | JavaScript |React JS |Redux",
+    stargazers_count: null,
+    languages_url: null,
+    pushed_at: null,
+  },
+  {
+    name: "CLONE OF FABALLEY",
+    description:  "FabAlley is one such online fashion store that is a one- stop shop for all your fashion needs, be it ethnic or western wear, bags or shoes.",
+    images : ["/Images/faballey1.png","/Images/faballey2.png","/Images/faballey3.png"],
+    svn_url: "https://github.com/Satya12325/faballey.git",
+    deploy_url :"https://faballeyclone.herokuapp.com/",
+    tech : "HTML | CSS | JavaScript | React JS |Redux",
+    stargazers_count: null,
+    languages_url: null,
+    pushed_at: null,
+  }
   
-     {
-      name: " CLONE OF SMATBOT",
-      description: "SmatBot is a conversational bot building platform to create customizable chatbots for Lead generation,  chat support, Interactive  Pages,Feedback and Suggestions for your business.",
-      images : ["/Images/smatbot1.png","/Images/smatbot2.png"],
-      svn_url: "https://github.com/utkrsh2505/Smatbot1.git",
-      deploy_url : "https://clone-smatbot.netlify.app/",
-      tech : "HTML | CSS ",
-      stargazers_count: "23",
-      languages_url: null,
-      pushed_at: null,
-    },
-    {
-      name: "CLONE OF BBC NEWS",
-      description:  "BBC News is an operational business division of the British Broadcasting Corporation responsible for the gathering and broadcasting of news.",
-      images : ["/Images/smatbot1.png","/Images/smatbot2.png"],
-      svn_url: "https://github.com/utkrsh2505/BBC_Clone.git",
-      deploy_url :"https://bbc-news-clone.netlify.app/",
-      tech : "HTML | CSS | JAVASCRIPT",
-      stargazers_count: null,
-      languages_url: null,
-      pushed_at: null,
-    },
-    {
-      name: "CLONE OF OYO",
-      description:  "OYO is India's one of the largest network of hotels, which provides customers to stay across the globe.",
-      images : ["/Images/oyo1.png","/Images/oyo2.png","/Images/oyo3.png"],
-      svn_url: "https://github.com/utkrsh2505/OYO-Clone",
-      deploy_url :"https://zealous-shirley-afc987.netlify.app/",
-      tech : "HTML | CSS | JavaScript |React JS |Redux",
-      stargazers_count: null,
-      languages_url: null,
-      pushed_at: null,
-    }
+   
+  
+   
 ]
 const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
